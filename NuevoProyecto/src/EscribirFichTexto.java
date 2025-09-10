@@ -8,7 +8,8 @@ public class EscribirFichTexto {
         try {
             FileWriter fw = new FileWriter(fichero, false);
             String texto = "El texto que deseo escribir.";
-            String textoB = "\nEl texto que escribo con un bucle For";
+            String textoB = "\nEl texto que escribo con un bucle For.";
+            String textoS = "\nEste otro lo escribo directamente con un String.";
 
             char[] ta = texto.toCharArray();
 
@@ -17,6 +18,8 @@ public class EscribirFichTexto {
             for(int i = 0; i < textoB.length(); i++) {
                 fw.write(textoB.charAt(i));
             }
+
+            fw.write(textoS);
 
             fw.close();
 
