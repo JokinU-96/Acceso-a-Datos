@@ -1,1 +1,2 @@
-El texto que deseo escribir.El texto que deseo escribir.
+El texto que deseo escribir.
+El texto que escribo con un bucle For
