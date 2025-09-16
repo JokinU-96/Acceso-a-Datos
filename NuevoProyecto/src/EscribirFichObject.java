@@ -42,9 +42,9 @@ public class EscribirFichObject {
             int i = 1;
             //Escritura
             while(true){
-                System.out.println("Posición: " + i );
-                i++;
                 try{
+                    System.out.println("Posición: " + i );
+                    i++;
                     String p = objectIS.readObject().toString();
                     System.out.println(p);
                 } catch(EOFException e){
