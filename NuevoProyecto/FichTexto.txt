@@ -1,3 +1,0 @@
-El texto que deseo escribir.
-El texto que escribo con un bucle For.
-Este otro lo escribo directamente con un String.
