@@ -19,7 +19,7 @@ public class LeerFichAleatorio {
         try {
             RandomAccessFile raf = new RandomAccessFile(fichero , "rw");
             long numeroRegistrosTotal = (raf.length() / totalBytes);
-            System.out.println("Numero de registros total: " + numeroRegistrosTotal);
+            System.out.println("Número de registros total: " + numeroRegistrosTotal);
 
             for(int i = 0; i < numeroRegistrosTotal; i++) {
                 raf.seek((long) i * totalBytes);//Para situarse al inicio de cada registro.

@@ -71,15 +71,20 @@ public class AddElementoAleatorio {
             Empleado nuevoEmpleado = recogerDatos();
 
             boolean datosInsertados = false;
+            int posicion = 0;
             for(int i = 0; i < numeroRegistrosTotal; i++){
                 raf.seek(i * totalBytes);
                 //Me aseguro de que los Id sean únicos.
-                nuevoEmpleado.setId(raf.readInt() + 10);
+                int id = raf.readInt();
 
-                if(raf.readInt() == -1){
+                if (id != -1){
+                    nuevoEmpleado.setId(id + 10);
+                }
+
+                if(id == -1){
                     //Escribo los datos en el registro vacío (Id = -1 = vacío).
                     System.out.println("Rellenando un hueco vacío en la posición " + i);
-                    insertarDatos(nuevoEmpleado, raf, i);
+                    posicion = i;
                     datosInsertados = true;
                 }
             }
@@ -87,6 +92,8 @@ public class AddElementoAleatorio {
             if(!datosInsertados){
                 //Añado un registro al final del fichero.
                 insertarDatos(nuevoEmpleado, raf, raf.length());
+            } else {
+                insertarDatos(nuevoEmpleado, raf, posicion);
             }
 
             System.out.println("Número total de registros: " + raf.length() / totalBytes);

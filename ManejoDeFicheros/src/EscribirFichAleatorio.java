@@ -12,6 +12,7 @@ public class EscribirFichAleatorio {
         List<Empleado> empleados = new ArrayList<>();
 
         empleados.add(new Empleado(10, "Urteaga", 20, 3400.45));
+        empleados.add(new Empleado(-1, "Urteaga", 20, 3400.45));
         empleados.add(new Empleado(20, "Zengotitabengoa", 10, 2300.25));
         empleados.add(new Empleado(30, "Luis Miguel", 20, 2300.25));
         empleados.add(new Empleado(40, "Antonio", 20, 2300.25));
