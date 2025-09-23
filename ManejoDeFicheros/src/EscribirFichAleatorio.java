@@ -22,6 +22,7 @@ public class EscribirFichAleatorio {
 
         try {
             RandomAccessFile raf = new RandomAccessFile(fichero, "rw");
+
             for(int i = 0; i < empleados.size(); i++){
                 //Escribo el identificador de cada registro en un entero de 4 bytes.
                 //Necesito que sean números entre 10 y 99.
@@ -32,12 +33,13 @@ public class EscribirFichAleatorio {
                 //Escribo el apellido de cada empleado en una cadena de carácteres de 20 bytes.
                 //Necesito comprobar que el apellido introducido no sea mayor al espacio en memoria. (20 bytes = 10 carácteres)
                 System.out.println("Inserto el apellido: " + raf.getFilePointer());
-                System.out.println("Apellido: " + empleados.get(i).getApellido());
                 if(empleados.get(i).getApellido().length() > 10){
                     //En el caso de que ocupe más de 20 bytes recorto el apellido.
                     raf.writeChars(empleados.get(i).getApellido().substring(0, 10));
+                    System.out.println("Apellido: " + empleados.get(i).getApellido().substring(0, 10));
                 } else {
                     raf.writeChars(empleados.get(i).getApellido());
+                    System.out.println("Apellido: " + empleados.get(i).getApellido());
                 }
                 System.out.println("FIN apellido: " + raf.getFilePointer());
 
@@ -53,7 +55,7 @@ public class EscribirFichAleatorio {
 
                 //Escribo el salario en un Double de 8 bytes.
                 raf.writeDouble(empleados.get(i).getSalario());
-                System.out.println(raf.getFilePointer());
+                System.out.println("FIN: " + raf.getFilePointer() + "\n");
 
             }
 

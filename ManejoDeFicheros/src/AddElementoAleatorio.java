@@ -61,22 +61,24 @@ public class AddElementoAleatorio {
         int idDepartamentoBytes = 4;
         int sueldoBytes = 8;
 
-        int totalBytes = 0;
-        totalBytes = idBytes + apellidoBytes + idDepartamentoBytes + sueldoBytes;
+        long totalBytes = idBytes + apellidoBytes + idDepartamentoBytes + sueldoBytes;
 
         try {
             RandomAccessFile raf = new RandomAccessFile(fichero, "rw");
             long numeroRegistrosTotal = (raf.length() / totalBytes);
+            System.out.println("Número total de registros: " + numeroRegistrosTotal);
 
             Empleado nuevoEmpleado = recogerDatos();
 
             boolean datosInsertados = false;
             for(int i = 0; i < numeroRegistrosTotal; i++){
+                raf.seek(i * totalBytes);
                 //Me aseguro de que los Id sean únicos.
                 nuevoEmpleado.setId(raf.readInt() + 10);
 
                 if(raf.readInt() == -1){
-                    //Escribo los datos en el registro vacío.
+                    //Escribo los datos en el registro vacío (Id = -1 = vacío).
+                    System.out.println("Rellenando un hueco vacío en la posición " + i);
                     insertarDatos(nuevoEmpleado, raf, i);
                     datosInsertados = true;
                 }
@@ -87,6 +89,7 @@ public class AddElementoAleatorio {
                 insertarDatos(nuevoEmpleado, raf, raf.length());
             }
 
+            System.out.println("Número total de registros: " + raf.length() / totalBytes);
             raf.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -101,33 +104,45 @@ public class AddElementoAleatorio {
         int idDepartamentoBytes = 4;
         int sueldoBytes = 8;
 
-        int totalBytes = 0;
-        totalBytes = idBytes + apellidoBytes + idDepartamentoBytes + sueldoBytes;
+        int totalBytes = idBytes + apellidoBytes + idDepartamentoBytes + sueldoBytes;
+        long registrosCompletados = raf.length();//Tamaño del fichero antes de empezar a escribir el nuevo empleado.
 
+        //Posiciono el cursor para empezar a escribir.
         if (posicion == raf.length()) {
+            //Opción 1: Escribir al final del fichero.
             raf.seek(raf.length());
         } else {
+            //Opción 2: Escribir en una posición determinada.
             raf.seek(posicion * totalBytes);
         }
-        System.out.println("Comienzo el registro: " + raf.getFilePointer());
+        System.out.println("Comienzo el registro en la posición: " + raf.getFilePointer());
 
         //Inserto los datos del empleado nuevo.
+        //ID
         raf.writeInt(empleado.getId());
 
+        //Apellido
         if(empleado.getApellido().length() > 10){
             //En el caso de que ocupe más de 20 bytes recorto el apellido.
             raf.writeChars(empleado.getApellido().substring(0, 10));
         } else {
             raf.writeChars(empleado.getApellido());
         }
+
         //Después del apellido hay que desplazarse para evitar romper el patrón.
-        if (posicion == raf.length()) {
-            raf.seek(raf.length());
+        if (posicion == registrosCompletados) {
+            //Cantidad de bytes antes de añadir nada
+            long offset = idBytes + apellidoBytes;//más el offset del apellido.
+            raf.seek( registrosCompletados + offset);
         } else {
             raf.seek((posicion * totalBytes) + idBytes + apellidoBytes);
         }
+        //Departamento.
         raf.writeInt(empleado.getDepartamento());
+
+        //Salario
         raf.writeDouble(empleado.getSalario());
+
         System.out.println("Nuevo registro añadido correctamente.\n\t" + empleado);
     }
 }
