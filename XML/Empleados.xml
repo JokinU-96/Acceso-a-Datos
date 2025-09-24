@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Empleados>
+    <empleado>
+        <id>10</id>
+        <apellido>Urteaga</apellido>
+        <dep>20</dep>
+        <salario>3400.45</salario>
+    </empleado>
+    <empleado>
+        <id>9</id>
+        <apellido>gurtisa</apellido>
+        <dep>10</dep>
+        <salario>3976.0</salario>
+    </empleado>
+    <empleado>
+        <id>20</id>
+        <apellido>Zengotitab</apellido>
+        <dep>10</dep>
+        <salario>2300.25</salario>
+    </empleado>
+    <empleado>
+        <id>30</id>
+        <apellido>Luis Migue</apellido>
+        <dep>20</dep>
+        <salario>2300.25</salario>
+    </empleado>
+    <empleado>
+        <id>40</id>
+        <apellido>Antonio</apellido>
+        <dep>20</dep>
+        <salario>2300.25</salario>
+    </empleado>
+    <empleado>
+        <id>50</id>
+        <apellido>Pedro</apellido>
+        <dep>20</dep>
+        <salario>2300.25</salario>
+    </empleado>
+    <empleado>
+        <id>60</id>
+        <apellido>Hureq</apellido>
+        <dep>90</dep>
+        <salario>327.0</salario>
+    </empleado>
+    <empleado>
+        <id>70</id>
+        <apellido>Kurte</apellido>
+        <dep>40</dep>
+        <salario>5864.78</salario>
+    </empleado>
+    <empleado>
+        <id>80</id>
+        <apellido>grtea</apellido>
+        <dep>20</dep>
+        <salario>2351.0</salario>
+    </empleado>
+</Empleados>
