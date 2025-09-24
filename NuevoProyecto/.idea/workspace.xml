@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="422b6be9-c2cd-4ba0-9488-3dfad44dcbf7" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JokinU-96&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JokinU-96/Acceso-a-Datos.git&quot;,
+    &quot;accountId&quot;: &quot;12ea0cdd-4502-4670-b42f-df96adff529b&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="32QXEVQ2i2R0oRZORwatMOMbKjo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CrearDir.executor": "Run",
+    "Application.EscribirFichTexto.executor": "Run",
+    "Application.EscribirIFilas.executor": "Run",
+    "Application.EscribirLeerFichBytes.executor": "Run",
+    "Application.LeerFichTexto.executor": "Run",
+    "Application.LeerFichTexto2.executor": "Run",
+    "Application.LeerFichTexto3.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.VerDir.executor": "Run",
+    "Application.VerInfo.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/149fa02@arriagainfo.local/Documentos/AccesoDatos",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/149fa02@arriagainfo.local/Documentos/AccesoDatos/NuevoProyecto/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.EscribirLeerFichBytes">
+    <configuration name="CrearDir" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CrearDir" />
+      <module name="NuevoProyecto" />
+      <option name="PROGRAM_PARAMETERS" value="." />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EscribirFichTexto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EscribirFichTexto" />
+      <module name="NuevoProyecto" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EscribirIFilas" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EscribirIFilas" />
+      <module name="NuevoProyecto" />
+      <option name="PROGRAM_PARAMETERS" value="./" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EscribirLeerFichBytes" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EscribirLeerFichBytes" />
+      <module name="NuevoProyecto" />
+      <option name="PROGRAM_PARAMETERS" value="./" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeerFichTexto" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeerFichTexto" />
+      <module name="NuevoProyecto" />
+      <option name="PROGRAM_PARAMETERS" value="./calendario.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeerFichTexto2" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeerFichTexto2" />
+      <module name="NuevoProyecto" />
+      <option name="PROGRAM_PARAMETERS" value="./loremIpsum.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeerFichTexto3" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeerFichTexto3" />
+      <module name="NuevoProyecto" />
+      <option name="PROGRAM_PARAMETERS" value="./loremIpsum.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VerDir" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="VerDir" />
+      <module name="NuevoProyecto" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VerInfo" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="VerInfo" />
+      <module name="NuevoProyecto" />
+      <option name="PROGRAM_PARAMETERS" value="../fichero.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EscribirFichTexto" />
+        <item itemvalue="Application.VerDir" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.25557.131" />
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-IU-252.25557.131" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="422b6be9-c2cd-4ba0-9488-3dfad44dcbf7" name="Changes" comment="" />
+      <created>1757353658935</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1757353658935</updated>
+      <workItem from="1757353665420" duration="108000" />
+      <workItem from="1757353789186" duration="105000" />
+      <workItem from="1757353901851" duration="678000" />
+      <workItem from="1757354788387" duration="5185000" />
+      <workItem from="1757435593680" duration="11731000" />
+      <workItem from="1757528618930" duration="5642000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/EscribirFichTexto.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
