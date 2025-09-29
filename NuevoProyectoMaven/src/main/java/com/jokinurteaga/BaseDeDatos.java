@@ -50,9 +50,9 @@ public class BaseDeDatos {
             // Se hace un bucle mientras haya registros, se van visualizando
             while (resultado.next()) {
                 int empNo = resultado.getInt(1);
-                String apellido = resultado.getString(1);
-                String oficio = resultado.getString(2);
-                double salario = resultado.getDouble(3);
+                String apellido = resultado.getString(2);
+                String oficio = resultado.getString(3);
+                double salario = resultado.getDouble(4);
 
                 empleados.add(new Empleado(empNo, apellido, oficio, salario));
 
@@ -94,8 +94,7 @@ public class BaseDeDatos {
             Connection conexion = conectar();
             // Preparamos la consulta
             Statement sentencia = conexion.createStatement();
-            ResultSet resultado = sentencia.executeQuery("UPDATE empleados SET salario=salario*" + n + " WHERE salario = " + salario + ";");
-            resultado.close();
+            sentencia.executeUpdate("UPDATE empleados SET salario=salario*" + n + " WHERE salario=" + salario + ";");
             sentencia.close();
             conexion.close();
 

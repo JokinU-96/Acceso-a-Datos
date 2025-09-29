@@ -18,6 +18,10 @@ public class App
             System.out.println(empleado);
         }
 
+        double salario = bd.getSalarioMaximo();
+        System.out.println("Salario maximo actual: " + salario);
+        bd.aumentarSalarioMaximo(salario, 50);
+
 
     }
 }
