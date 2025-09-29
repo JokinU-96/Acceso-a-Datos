@@ -26,12 +26,12 @@
     &quot;assignee&quot;: &quot;JokinU-96&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/JokinU-96/Acceso-a-Datos.git&quot;,
-    &quot;accountId&quot;: &quot;12ea0cdd-4502-4670-b42f-df96adff529b&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/JokinU-96/Acceso-a-Datos.git",
+    "accountId": "82ae6e5b-2921-4efb-85b5-67e6abe7a831"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -40,37 +40,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CrearDir.executor": "Run",
-    "Application.EscribirFichTexto.executor": "Run",
-    "Application.EscribirIFilas.executor": "Run",
-    "Application.EscribirLeerFichBytes.executor": "Run",
-    "Application.LeerFichTexto.executor": "Run",
-    "Application.LeerFichTexto2.executor": "Run",
-    "Application.LeerFichTexto3.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.VerDir.executor": "Run",
-    "Application.VerInfo.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/149fa02@arriagainfo.local/Documentos/AccesoDatos",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/149fa02@arriagainfo.local/Documentos/AccesoDatos/NuevoProyecto/src/Main.java",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CrearDir.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EscribirFichTexto.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EscribirIFilas.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EscribirLeerFichBytes.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LeerFichTexto.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LeerFichTexto2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LeerFichTexto3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VerDir.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VerInfo.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/149fa02@arriagainfo.local/Documentos/AccesoDatos&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/149fa02@arriagainfo.local/Documentos/AccesoDatos/NuevoProyecto/src/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -175,6 +175,7 @@
       <workItem from="1757354788387" duration="5185000" />
       <workItem from="1757435593680" duration="11731000" />
       <workItem from="1757528618930" duration="5642000" />
+      <workItem from="1759164240779" duration="21000" />
     </task>
     <servers />
   </component>
