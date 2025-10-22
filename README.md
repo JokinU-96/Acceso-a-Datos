@@ -6,27 +6,29 @@ Acceso a Datos Azterketa 1.Eb
 
 File f = new File(args[0])
 
-* f.exists();
-* f.getName(); -> devuelve el nombre del fichero.
-* f.getPath(); -> devuelve la ruta relativa del fichero
-* f.length(); -> devuelve el tamaño en bytes.
-* f.isFile();
+* f.exists( );
+* f.getName( ); -> devuelve el nombre del fichero.
+* f.getPath( ); -> devuelve la ruta relativa del fichero
+* f.length( ); -> devuelve el tamaño en bytes.
+* f.isFile( );
 * f.isDirectory;
-* f.list(); -> hace un listado de ficheros y directorios dentro de la ruta señalada.
+* f.list( ); -> hace un listado de ficheros y directorios dentro de la ruta señalada.
 * etc.
 ---
 ## Flujos o Streams
 
 * Reader / Writer : escriben y leen caracteres.
 * Input y Output Streams : escriben y leen bytes.
-  ##FileWriter
+---
+## FileWriter
+
 * File fichero = new Flie(“FicheroDeTexto.txt”);
 * FileWriter fw = new FileWriter(fichero , false)
-* Indíco el fichero que deseo manipular y una condición para indicar si quiero que se añada contenido a lo anterior o
+* Indico el fichero que deseo manipular y una condición para indicar si quiero que se añada contenido a lo anterior o
   directamente lo sobreescriba.
-* char[] texto = string.toCharArray();
+* char[ ] texto = string.toCharArray( );
 * fw.writte( texto )
-* for ( int i = 0; i < string.length(); i++){ fw.write( string.charAt( i ) ); }
+* for ( int i = 0; i < string.length(); i++ ){ fw.write( string.charAt( i ) ); }
 * fw.write( string )
 * fw.close( ) <- importante cerrar el flujo de escritura.
 ---
@@ -35,7 +37,7 @@ File f = new File(args[0])
 * Sirve para escribir ficheros línea por línea.
 * FileWriter fw = new FileWriter( fichero, false )
 * BufferedWriter bw = new BufferedWriter( fw );
-* for ( int = 1; i < 20; i++) { bw.write( “Fila número” + i ); bw.newLine( );}; <- escribe 20 líneas con el texto: Fila
+* for ( int = 1; i < 20; i++ ) { bw.write( “Fila número” + i ); bw.newLine( );}; <- escribe 20 líneas con el texto: Fila
   número x.
 ---
 ## FileReader
@@ -44,7 +46,7 @@ File f = new File(args[0])
 * FileReader fr = new FileReader( fichero );
 * while ( ( int i = fr.read( ) ) != 1) { System.out.print( ( char ) i ); }
 * fr.close( ) <- importante cerrar el flujo de lectura.
-* fr.read ( char[ ] bfr = new char[ 50 ], 5, 20) -> escribir un buffer de 50 carácteres cada vez, personalizado a un
+* fr.read ( ( char[ ] bfr = new char[ 50 ] ), 5, 20) -> escribir un buffer de 50 carácteres cada vez, personalizado a un
   rango de 5 a 20.
 ---
 ## BufferedReader
@@ -54,7 +56,7 @@ File f = new File(args[0])
 * BufferedReader br = new BufferedReader( new FileReader( fichero ));
 * while ( ( String l = br.readLine( ) ) != null ){ System.out.println( l ) };
 ---
-## FileOutputStream y FileInputStream (2 en 1)
+## FileOutputStream y FileInputStream (2 en 1) (Binarios)
 
 * File fichero = new File( “FichBytes.dat” ); <- se va a crear un flujo de entrada y salida sobre estre fichero.
 * FileOutputStream fos = new FileOutputStream( fichero );
@@ -64,26 +66,26 @@ File f = new File(args[0])
 * while ( ( int i = fin.read( ) ) != 1) { System.out.println( i ); };
 * fin.close( ) <- importante cerrar el flujo de lectura.
 ---
-## FileOutputStream y DataOutputStream
+## FileOutputStream y DataOutputStream (Binarios)
 
 * FileOutputStream fos = new FileOutputStream( new File( fichero ) );
-* DataOutputStream dos = new DataOutputStream( fos ); <- es una clase para leer datos de tipo primarios (readBoolean(),
-  readByte(), readInt(), readUTF() ).
-* String[] nombres = { "Ana”, “Luis Miguel” };
-* int[] edades = { 12, 19 };
+* DataOutputStream dos = new DataOutputStream( fos ); <- es una clase para leer datos de tipo primarios (readBoolean( ),
+  readByte( ), readInt( ), readUTF( ) ).
+* String[ ] nombres = { "Ana”, “Luis Miguel” };
+* int[ ] edades = { 12, 19 };
 * for ( int i = 0; i < edades.length; i++ ) { dos.writeUTF( nombres[ i ] ); dos.writeInt( edades[ i ]); };
 * dos.close( ) <- importante cerrar el flujo de salida.
 * fos.close( )
 ---
-## FileInputStream y DataInputStream
+## FileInputStream y DataInputStream (Binarios)
 
 * FileInputStream fis = new FileInputStream( new File( fichero ) );
 * DataInputStream dis = new DataInputStream( fis ); <- es una clase para escribir datos de tipo primarios (
-  readBoolean(), readByte(), readInt(), readUTF() ).
-* while( dis.availble() > 0 ) { String nombre = dis.readUTF( ); int edad = dis.readInt( ); System.out.println( “Sujeto
+  readBoolean( ), readByte( ), readInt( ), readUTF( ) ).
+* while( dis.availble( ) > 0 ) { String nombre = dis.readUTF( ); int edad = dis.readInt( ); System.out.println( “Sujeto
   número ” + nombre + edad ); };
 ---
-## FileOutputStream y ObjectOutputStream
+## FileOutputStream y ObjectOutputStream (Binarios)
 
 * FileOutputStream fos = new FileOutputStream( new File( fichero ) );
 * ObjectOutputStream oos = new ObjectOutputStream( fos );
@@ -102,7 +104,7 @@ File f = new File(args[0])
   infinito.
 * ois.close( );
 ---
-## RandomAccessFile write
+## RandomAccessFile write (Binarios)
 
 * RandomAccessFile raf = new RandomAccessFile( fichero, “rw” ); -> hay que poner el fichero y el modo de acceso que
   puede ser sólo lectura ( r ) o escritura/lectura ( rw ).
@@ -115,7 +117,7 @@ File f = new File(args[0])
   18 * 36 ) + 24 = 672 y escribimos a partir de ahí.
 * raf.close( ); <- importante cerrar el flujo.
 ---
-## RandomAccessFile read
+## RandomAccessFile read (Binarios)
 
 * RandomAccessFile raf = new RandomAccessFile( fichero, “rw” );
 * long numeroRegistrosToral = ( raf.length( ) / totalBytesRegistro ); <- es necesario saber cuántos registros hay para
